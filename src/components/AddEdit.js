@@ -1,31 +1,15 @@
-import React, { useState } from "react";
-import { useMutation } from "@apollo/react-hooks";
+import React from "react";
 
-import { GET_TODOS, ADD_TODO } from "../queries";
+import { useAddTodo } from "../todoHooks";
 
 const AddEdit = () => {
-  const [addTodo, { data }] = useMutation(ADD_TODO, {
-    update(
-      cache,
-      {
-        data: { createTodo }
-      }
-    ) {
-      const { todos } = cache.readQuery({ query: GET_TODOS });
-      cache.writeQuery({
-        query: GET_TODOS,
-        data: { todos: [createTodo, ...todos] }
-      });
-    }
-  });
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo, save] = useAddTodo();
 
   return (
     <form
       onSubmit={e => {
         e.preventDefault();
-        addTodo({ variables: { task: todo } });
-        setTodo("");
+        save();
       }}
     >
       <input

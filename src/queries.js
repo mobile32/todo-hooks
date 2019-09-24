@@ -11,7 +11,7 @@ export const GET_TODOS = gql`
 `;
 
 export const ADD_TODO = gql`
-  mutation AddTodo($task: String!) {
+  mutation($task: String!) {
     createTodo(input: { task: $task, done: false }) {
       id
       task
@@ -20,8 +20,18 @@ export const ADD_TODO = gql`
   }
 `;
 
+export const DONE_TODO = gql`
+  mutation($id: ID!) {
+    updateTodo(id: $id, input: { done: true }) {
+      id
+      task
+      done
+    }
+  }
+`;
+
 export const DELETE_TODO = gql`
-  mutation {
-    deleteTodo(id: "")
+  mutation($id: ID!) {
+    deleteTodo(id: $id)
   }
 `;

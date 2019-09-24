@@ -1,0 +1,254 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "Get the milk",
+      "done": true
+    },
+    {
+      "id": 2,
+      "task": "The zeitgeist contends that the kittens could be said to resemble funny birds",
+      "done": false
+    },
+    {
+      "id": 3,
+      "task": "A kangaroo is a detailed turtle",
+      "done": true
+    },
+    {
+      "id": 4,
+      "task": "Having been a gymnast, some posit the succinct grapefruit to be less than splendid",
+      "done": false
+    },
+    {
+      "id": 5,
+      "task": "In recent years, authors often misinterpret the deer as an ambitious lemon, when in actuality it feels more like an impartial blackberry",
+      "done": true
+    },
+    {
+      "id": 6,
+      "task": "A strawberry is the fish of an apricot",
+      "done": false
+    },
+    {
+      "id": 7,
+      "task": "We know that their bee was, in this moment, a plausible dolphin",
+      "done": false
+    },
+    {
+      "id": 8,
+      "task": "If this was somewhat unclear, affectionate currants show us how pandas can be blackberries",
+      "done": false
+    },
+    {
+      "id": 9,
+      "task": "A romantic melon's crocodile comes with it the thought that the self-confident prune is an apple",
+      "done": false
+    },
+    {
+      "id": 10,
+      "task": "A goldfish is a tangerine's bird",
+      "done": false
+    },
+    {
+      "id": 11,
+      "task": "In his own words: \"Authors often misinterpret the seal as an inventive spider, when in actuality it feels more like a persistent alligator.",
+      "done": false
+    },
+    {
+      "id": 12,
+      "task": "Washing and polishing the car,before goats, ants were only lemons",
+      "done": false
+    },
+    {
+      "id": 13,
+      "task": "By the waygiraffes are sympathetic sharks",
+      "done": false
+    },
+    {
+      "id": 14,
+      "task": "Their goldfish was, in this moment, a honorable lime",
+      "done": true
+    },
+    {
+      "id": 15,
+      "task": "As far as he is concerned, their chimpanzee was, in this moment, a discreet grapefruit",
+      "done": true
+    },
+    {
+      "id": 16,
+      "task": "A fig is a self-disciplined horse",
+      "done": false
+    },
+    {
+      "id": 17,
+      "task": "In her own words: \"One cannot separate lemons from nice persimmons.",
+      "done": false
+    },
+    {
+      "id": 18,
+      "task": "Their lobster was, in this moment, a confident elephant",
+      "done": true
+    },
+    {
+      "id": 19,
+      "task": "A hamster can hardly be considered a philosophical octopus without also being a lion",
+      "done": false
+    },
+    {
+      "id": 20,
+      "task": "The intelligent kangaroo reveals itself as a considerate orange to those who look",
+      "done": false
+    },
+    {
+      "id": 21,
+      "task": "It's very tricky, if not impossible, an octopus is the tiger of a cherry",
+      "done": true
+    },
+    {
+      "id": 22,
+      "task": "Yelling: \"The honorable goldfish reveals itself as a decisive persimmon to those who look?",
+      "done": false
+    },
+    {
+      "id": 23,
+      "task": "A blueberry is a knowledgeable goldfish",
+      "done": true
+    },
+    {
+      "id": 24,
+      "task": "If this was somewhat unclear, good cranberries show us how fishes can be blueberries",
+      "done": true
+    },
+    {
+      "id": 25,
+      "task": "Though we assume the latter, incomprehensibilities of a discreet hippopotamus and a panda made a fly frank",
+      "done": true
+    },
+    {
+      "id": 26,
+      "task": "He said: \"Though we assume the latter, they were lost without the quiet grapes that composed their blackberry!",
+      "done": false
+    },
+    {
+      "id": 27,
+      "task": "If this was somewhat unclear, a romantic tangerine without hippopotamus is truly a cherry of brave pineapples",
+      "done": false
+    },
+    {
+      "id": 28,
+      "task": "Draped neatly on a hanger, authors often misinterpret the kumquat as a thrifty pomegranate, when in actuality it feels more like an adventurous pig",
+      "done": false
+    },
+    {
+      "id": 29,
+      "task": "A nice hamster's fly comes with it the thought that the pioneering sheep is a cherry",
+      "done": true
+    },
+    {
+      "id": 30,
+      "task": "Lemons are enthusiastic blueberries",
+      "done": true
+    },
+    {
+      "id": 31,
+      "task": "The zeitgeist contends that some posit the obedient crocodile to be less than eager",
+      "done": false
+    },
+    {
+      "id": 32,
+      "task": "A fish of the ant is assumed to be a romantic duck",
+      "done": true
+    },
+    {
+      "id": 33,
+      "task": "Incomprehensibilities of a gentle blueberry and a pear made a grapes eager",
+      "done": true
+    },
+    {
+      "id": 34,
+      "task": "It's an undeniable fact, really; we can assume that any instance of a kitten can be construed as a trustworthy goat",
+      "done": false
+    },
+    {
+      "id": 35,
+      "task": "Some posit the plausible camel to be less than polite",
+      "done": true
+    },
+    {
+      "id": 36,
+      "task": "The philosophical snake reveals itself as a self-assured fig to those who look",
+      "done": false
+    },
+    {
+      "id": 37,
+      "task": "The literature would have us believe that an intellectual owl is not but a watermelon",
+      "done": false
+    },
+    {
+      "id": 38,
+      "task": "The squirrels could be said to resemble inventive figs",
+      "done": false
+    },
+    {
+      "id": 39,
+      "task": "Shouting with happiness, we can assume that any instance of a monkey can be construed as a quiet apple",
+      "done": false
+    },
+    {
+      "id": 40,
+      "task": "Having been a gymnast, their strawberry was, in this moment, a silly cow",
+      "done": true
+    },
+    {
+      "id": 41,
+      "task": "A frank rabbit's camel comes with it the thought that the hard-working goldfish is a cranberry",
+      "done": true
+    },
+    {
+      "id": 42,
+      "task": "Few can name an obedient octopus that isn't a jolly sheep",
+      "done": false
+    },
+    {
+      "id": 43,
+      "task": "After a long day at school and work, the ambitious shark comes from a lovely apricot",
+      "done": false
+    },
+    {
+      "id": 44,
+      "task": "The zeitgeist contends that some posit the diligent apricot to be less than punctual",
+      "done": false
+    },
+    {
+      "id": 45,
+      "task": "The plum is a camel",
+      "done": true
+    },
+    {
+      "id": 46,
+      "task": "In her own words: \"Though we assume the latter, an enthusiastic monkey's cranberry comes with it the thought that the easygoing squirrel is a turtle.",
+      "done": false
+    },
+    {
+      "id": 47,
+      "task": "The fishes could be said to resemble seemly goldfishes",
+      "done": false
+    },
+    {
+      "id": 48,
+      "task": "Though we assume the latter, the endurable fox reveals itself as a calm elephant to those who look",
+      "done": false
+    },
+    {
+      "id": 49,
+      "task": "Backup the MacBook",
+      "done": false
+    },
+    {
+      "id": 50,
+      "task": "Write the damn resolver!",
+      "done": false
+    }
+  ]
+}
