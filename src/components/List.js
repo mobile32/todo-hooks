@@ -1,23 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const List = ({ movies }) => (
+const List = ({ todos }) => (
   <>
-    {movies.map(movie => (
-      <div key={movie.number}>
-        <div>{movie.title}</div>
-        <div>{movie.description}</div>
+    {todos.map(todo => (
+      <div key={todo.id}>
+        {todo.done ? <strike>{todo.task}</strike> : <div>{todo.task}</div>}
       </div>
     ))}
   </>
 );
 
 List.propTypes = {
-  movies: PropTypes.arrayOf({
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-  })
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      task: PropTypes.string.isRequired,
+      done: PropTypes.bool.isRequired
+    })
+  )
 };
 
 export default List;
