@@ -3,10 +3,15 @@ import PropTypes from "prop-types";
 
 export default class Header extends Component {
   static propTypes = {
-    text: PropTypes.string.isRequired
+    todos: PropTypes.array
+  };
+
+  _workScore = () => {
+    const { todos } = this.props;
+    return todos.length * todos.length;
   };
 
   render() {
-    return <h4>{this.props.text}</h4>;
+    return <h4>Work score {this._workScore()}</h4>;
   }
 }

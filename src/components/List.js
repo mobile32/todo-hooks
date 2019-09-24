@@ -14,7 +14,7 @@ const List = ({ todos }) => (
 List.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       task: PropTypes.string.isRequired,
       done: PropTypes.bool.isRequired
     })

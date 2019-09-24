@@ -1,18 +1,9 @@
 import React, { Suspense } from "react";
-import Header from "./components/Header";
-
-import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 
-const GET_TODOS = gql`
-  {
-    todos {
-      id
-      task
-      done
-    }
-  }
-`;
+import Header from "./components/Header";
+import AddEdit from "./components/AddEdit";
+import { GET_TODOS } from "./queries";
 
 const OptimizedHeader = React.memo(Header);
 const LongTodoList = React.lazy(() => import("./components/List"));
@@ -22,10 +13,9 @@ const App = () => {
 
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
-
   return (
     <>
-      <OptimizedHeader text="Todo list" />
+      <OptimizedHeader todos={data.todos} />
       <Suspense fallback={<div>Loading...</div>}>
         <LongTodoList
           todos={data.todos.map(todo => ({
@@ -35,6 +25,7 @@ const App = () => {
           }))}
         />
       </Suspense>
+      <AddEdit />
     </>
   );
 };
