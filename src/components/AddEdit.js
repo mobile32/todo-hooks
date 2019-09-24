@@ -12,10 +12,9 @@ const AddEdit = () => {
       }
     ) {
       const { todos } = cache.readQuery({ query: GET_TODOS });
-      console.log(createTodo);
       cache.writeQuery({
         query: GET_TODOS,
-        data: { todos: todos.concat([createTodo]) }
+        data: { todos: [createTodo, ...todos] }
       });
     }
   });
@@ -32,6 +31,7 @@ const AddEdit = () => {
       <input
         type="text"
         id="todo"
+        value={todo}
         onChange={e => setTodo(e.target.value)}
       ></input>
       <button>Add</button>

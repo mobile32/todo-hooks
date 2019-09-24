@@ -16,6 +16,7 @@ const App = () => {
   return (
     <>
       <OptimizedHeader todos={data.todos} />
+      <AddEdit />
       <Suspense fallback={<div>Loading...</div>}>
         <LongTodoList
           todos={data.todos.map(todo => ({
@@ -25,7 +26,6 @@ const App = () => {
           }))}
         />
       </Suspense>
-      <AddEdit />
     </>
   );
 };

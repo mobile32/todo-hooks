@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 export const GET_TODOS = gql`
   query {
-    todos {
+    todos(sort: "id", dir: "desc") {
       id
       task
       done
