@@ -18,10 +18,20 @@ const TodoList = () => {
           key={todo.id}
           onClick={() => finishTodo({ variables: { id: todo.id } })}
         >
-          {todo.done ? <strike>{todo.task}</strike> : <div>{todo.task}</div>}
-          <button onClick={() => deleteTodo({ variables: { id: todo.id } })}>
-            X
-          </button>
+          {todo.done ? (
+            <>
+              <strike>{todo.task}</strike>
+              <button
+                onClick={() => {
+                  deleteTodo({ variables: { id: todo.id } });
+                }}
+              >
+                X
+              </button>
+            </>
+          ) : (
+            <div>{todo.task}</div>
+          )}
         </div>
       ))}
     </>
