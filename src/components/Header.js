@@ -5,7 +5,10 @@ import { GET_TODOS } from "../queries";
 
 export default class Header extends Component {
   _workScore = todos => {
-    return todos.length * todos.length;
+    const lengthOfDone = todos.filter(todo => todo.done).length;
+    const lengthUnfinished = todos.filter(todo => !todo.done).length;
+
+    return lengthOfDone - lengthUnfinished;
   };
 
   render() {
@@ -15,7 +18,7 @@ export default class Header extends Component {
           if (loading) return "Loading...";
           if (error) return `Error! ${error.message}`;
 
-          return <h4>Work score {this._workScore(data.todos)}</h4>;
+          return <h4>Score {this._workScore(data.todos)}</h4>;
         }}
       </Query>
     );
