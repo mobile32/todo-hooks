@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
-import { GET_TODOS, ADD_TODO, DONE_TODO, DELETE_TODO } from "./queries";
 import { useQuery, useMutation } from "@apollo/react-hooks";
+
+import { GET_TODOS, ADD_TODO, DONE_TODO, DELETE_TODO } from "./queries";
 
 const updateCacheAfterUpdate = {
   update(
@@ -13,6 +14,21 @@ const updateCacheAfterUpdate = {
     cache.writeQuery({
       query: GET_TODOS,
       data: { todos: [createTodo, ...todos] }
+    });
+  }
+};
+
+const updateCacheAfterDelete = {
+  update(
+    cache,
+    {
+      data: { deleteTodo: id }
+    }
+  ) {
+    const { todos } = cache.readQuery({ query: GET_TODOS });
+    cache.writeQuery({
+      query: GET_TODOS,
+      data: { todos: todos.filter(todo => todo.id !== id) }
     });
   }
 };
@@ -39,21 +55,5 @@ export const useAddTodo = () => {
 export const useFinishTodo = () =>
   useMutation(DONE_TODO, updateCacheAfterUpdate);
 
-export const useDeleteTodo = () => {
-  const updateCacheAfterDelete = {
-    update(
-      cache,
-      {
-        data: { deleteTodo: id }
-      }
-    ) {
-      const { todos } = cache.readQuery({ query: GET_TODOS });
-      cache.writeQuery({
-        query: GET_TODOS,
-        data: { todos: todos.filter(todo => todo.id !== id) }
-      });
-    }
-  };
-
-  return useMutation(DELETE_TODO, updateCacheAfterDelete);
-};
+export const useDeleteTodo = () =>
+  useMutation(DELETE_TODO, updateCacheAfterDelete);
