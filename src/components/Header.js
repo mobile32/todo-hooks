@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { Query } from "react-apollo";
+import styled from "styled-components";
 
 import { GET_TODOS } from "../queries";
+
+const Text = styled.h4`
+  color: #50507b;
+  text-align: center;
+`;
 
 export default class Header extends Component {
   _workScore = todos => {
@@ -18,7 +24,7 @@ export default class Header extends Component {
           if (loading) return "Loading...";
           if (error) return `Error! ${error.message}`;
 
-          return <h4>Score {this._workScore(data.todos)}</h4>;
+          return <Text>Score {this._workScore(data.todos)}</Text>;
         }}
       </Query>
     );
