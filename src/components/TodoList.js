@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import { useGetTodo, useFinishTodo, useDeleteTodo } from "../todoHooks";
@@ -24,6 +23,7 @@ const Text = styled.div`
   padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 `;
 
 const StrikedText = styled(Text)`
